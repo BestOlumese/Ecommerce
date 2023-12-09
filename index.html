@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+  <nav>
+    <div class="nav-icon-group">
+      <img src="images/icon-menu.svg" class="icon-hamburger" id="menu" alt="">
+      <img src="images/logo.svg" alt="">
+    </div>
+    <ul class="menu">
+      <img src="images/icon-close.svg" id="close" alt="">
+      <li><a href="#">Collections</a></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="menu-icon">
+      <div class="cart">
+        <img src="images/icon-cart.svg" class="icon-cart" alt="">
+        <span class="badge qty-badge"  style="display: none;"></span>
+      </div>
+      <img src="images/image-avatar.png" class="avatar-img" alt="">
+      <div class="cart-box">
+        <div class="cart-head">
+          <h3>Cart</h3>
+        </div>
+        <div class="cart-body">
+          <div class="cart-empty"><p>Your cart is empty</p></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="overlay"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-left">
+        <div class="pic-container">
+          <img src="images/image-product-1.jpg" class="main-image">
+          <div class="arrow-left left">
+            <img src="images/icon-previous.svg" alt="">
+          </div>
+          <div class="arrow-right right">
+            <img src="images/icon-next.svg" alt="">
+          </div>
+        </div>
+        <div class="thumbnail-row">
+          <div class="img-container active">
+            <img src="images/image-product-1-thumbnail.jpg" class="thumb" alt="">
+          </div>
+          <div class="img-container">
+            <img src="images/image-product-2-thumbnail.jpg" class="thumb" alt="">
+          </div>
+          <div class="img-container">
+            <img src="images/image-product-3-thumbnail.jpg" class="thumb" alt="">
+          </div>
+          <div class="img-container">
+            <img src="images/image-product-4-thumbnail.jpg" class="thumb" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-right">
+        <div class="content">
+          <h4>Sneaker Company</h4>
+          <h2>Fall Limited Edition Sneakers</h2>
+          <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+            durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+          <div class="price-row">
+            <h3 class="new-price">$125.00</h3> <p class="discount-badge">50%</p>
+            <p class="old-price-sm">$250.00</p>
+          </div>
+          <p class="old-price">$250.00</p>
+          <div class="btn-row">
+            <div class="quantity-group">
+              <img src="images/icon-minus.svg" class="minus" alt="">
+              <span class="qty">0</span>
+              <img src="images/icon-plus.svg" class="plus">
+            </div>
+            <button id="primary-button" class="quantity-btn addCart">
+              <img src="images/icon-cart.svg" class="quantity-cart" alt="">
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox-overlay">
+  </div>
+
+  <div class="lightbox">
+    <img src="images/icon-close.svg" class="lightbox-close" alt="">
+    <div class="lightbox-image-container">
+      <img src="images/image-product-1.jpg" class="lightbox-main-image">
+      <div class="arrow-left lightbox-left">
+        <img src="images/icon-previous.svg" alt="">
+      </div>
+      <div class="arrow-right lightbox-right">
+        <img src="images/icon-next.svg" alt="">
+      </div>
+    </div>
+    <div class="thumbnail-row">
+      <div class="img-container active">
+        <img src="images/image-product-1-thumbnail.jpg" class="lightbox-thumb" alt="">
+      </div>
+      <div class="img-container">
+        <img src="images/image-product-2-thumbnail.jpg" class="lightbox-thumb" alt="">
+      </div>
+      <div class="img-container">
+        <img src="images/image-product-3-thumbnail.jpg" class="lightbox-thumb" alt="">
+      </div>
+      <div class="img-container">
+        <img src="images/image-product-4-thumbnail.jpg" class="lightbox-thumb" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox">
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
